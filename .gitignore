@@ -1,0 +1,12 @@
+
+packages/*
+**/Logs/*
+*.cache
+UpgradeLog*.XML
+*ReSharper*
+**/bin/*
+**/obj/*
+*.user
+*.suo
+NDependOut/*
+publish/*
