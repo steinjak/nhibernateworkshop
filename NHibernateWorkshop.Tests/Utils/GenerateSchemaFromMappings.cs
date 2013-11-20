@@ -1,4 +1,7 @@
 ﻿using System;
+using System.IO;
+using System.Text;
+using System.Xml;
 using System.Xml.Serialization;
 using NHibernate.Cfg;
 using NHibernate.Dialect;
@@ -48,8 +51,15 @@ namespace NHibernateWorkshop.Tests.Utils
         public void DumpMappingsToConsole()
         {
             var map = DbConfig.MapByCodeMapper.Map();
-            var ser = new XmlSerializer(map.GetType());
-            ser.Serialize(Console.Out, map);
+            var serializer = new XmlSerializer(map.GetType());
+
+            var sb = new StringBuilder();
+            using (var writer = XmlWriter.Create(sb, new XmlWriterSettings { Indent = true }))
+            {
+                serializer.Serialize(writer, map);
+            }
+
+            Console.WriteLine(sb.ToString());
         }
     }
 }
