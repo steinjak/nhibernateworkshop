@@ -4,7 +4,7 @@ namespace NHibernateWorkshop.Models
 {
     public class Contributor : Entity
     {
-        public User User { get; set; }
-        public DateTime Since { get; set; }
+        public virtual User User { get; set; }
+        public virtual DateTime Since { get; set; }
     }
 }

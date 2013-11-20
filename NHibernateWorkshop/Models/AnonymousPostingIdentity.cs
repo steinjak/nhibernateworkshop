@@ -7,6 +7,6 @@
             get { return Nick; }
         }
 
-        public string Nick { get; set; }
+        public virtual string Nick { get; set; }
     }
 }

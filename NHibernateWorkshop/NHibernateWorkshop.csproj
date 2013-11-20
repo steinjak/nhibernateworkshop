@@ -52,6 +52,9 @@
     <Reference Include="NHibernate.Caches.SysCache">
       <HintPath>..\packages\NHibernate.Caches.SysCache.3.3.3.4000\lib\net35\NHibernate.Caches.SysCache.dll</HintPath>
     </Reference>
+    <Reference Include="Ninject">
+      <HintPath>..\packages\Ninject.3.0.1.10\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -124,10 +127,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="App_Start\DbConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\ApplicationBootstrapper.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ControllerModule.cs" />
+    <Compile Include="Controllers\Home\Index.cs" />
+    <Compile Include="Controllers\MvcAction.cs" />
+    <Compile Include="Data\DbModule.cs" />
+    <Compile Include="Data\EntityStore.cs" />
+    <Compile Include="Data\MapByCodeMapper.cs" />
+    <Compile Include="Data\Query.cs" />
+    <Compile Include="Data\SessionManager.cs" />
+    <Compile Include="Data\SessionProvider.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
