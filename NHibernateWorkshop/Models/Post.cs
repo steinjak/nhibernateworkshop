@@ -5,6 +5,7 @@ namespace NHibernateWorkshop.Models
 {
     public class Post : Entity
     {
+        public virtual User Author { get; set; }
         public virtual Blog Blog { get; set; }
         public virtual DateTime? PublishedOn { get; set; }
         public virtual bool IsSticky { get; set; }
@@ -12,6 +13,7 @@ namespace NHibernateWorkshop.Models
         public virtual MediaFile FeaturedImage { get; set; }
         public virtual string Title { get; set; }
         public virtual string Content { get; set; }
-        public virtual List<Comment> Comments { get; set; }
+        public virtual IList<Comment> Comments { get; set; }
+        public virtual IList<MediaFile> Media { get; set; }
     }
 }

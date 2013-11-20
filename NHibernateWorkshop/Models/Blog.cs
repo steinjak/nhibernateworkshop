@@ -6,7 +6,7 @@ namespace NHibernateWorkshop.Models
     {
         public virtual User Owner { get; set; }
         public virtual string Title { get; set; }
-        public virtual List<Post> Posts { get; set; }
-        public virtual List<Contributor> Contributors { get; set; } 
+        public virtual IList<Post> Posts { get; set; }
+        public virtual IList<Contributor> Contributors { get; set; } 
     }
 }

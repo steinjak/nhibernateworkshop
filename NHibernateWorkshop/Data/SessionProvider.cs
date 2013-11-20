@@ -1,6 +1,7 @@
 ﻿using System;
 using NHibernate;
 using NHibernate.Cfg;
+using NHibernateWorkshop.Data.MapByCode;
 
 namespace NHibernateWorkshop.Data
 {

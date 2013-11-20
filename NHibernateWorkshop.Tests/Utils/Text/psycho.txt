@@ -1,0 +1,70 @@
+﻿Abstract
+
+Background Dementia with Lewy bodies (DLB) is a common dementia subtype that has only been recognised in the past decade and that remains widely underdiagnosed.
+
+Aims To review the pathological and clinical features of DLB, to consider methods of investigation and diagnosis, and to recommend safe and effective management strategies.
+
+Method A selective review was made of the key literature.
+
+Results Using operationalised criteria, DLB can be clinically diagnosed with an accuracy similar to that achieved for Alzheimer's disease or Parkinson's disease. Underdetection is largely due to poor definition of the criterion of cognitive fluctuation. Ancillary investigations, particularly neuroimaging, can aid in differential diagnosis. Extreme caution in the use of neuroleptic medication is advised. Cholinesterase inhibitors may be particularly effective in DLB.
+
+Conclusions Clinicians should be aware of DLB as part of a spectrum of Lewy body disorders. Neuroleptic sensitivity reactions and good response to cholinergic therapies are important aspects of management.
+
+
+
+Dementia with Lewy bodies (DLB) is a common form of dementia in old age, accounting for 15-20% of cases in hospital autopsy series (Weiner, 1999), a prevalence confirmed in a UK community-based dementia case register study (Holmes et al, 1999). The disorder shares clinical and pathological features with both Alzheimer's disease and Parkinson's disease. The differentiation of DLB from these other disorders therefore poses diagnostic difficulties — where do the boundaries begin and end?
+
+
+
+PATHOLOGY
+
+Lewy bodies are neuronal inclusions composed of abnormally phosphorylated, neurofilament proteins aggregated with ubiquitin and α-synuclein. In Parkinson's disease, Lewy body formation and neuron loss in brain-stem nuclei, particularly the substantia nigra, lead to movement disorder. In DLB, significant Lewy body formation also occurs in paralimbic and neocortical structures, and extensive depletion of acetylcholine neurotransmission in neocortical areas occurs as a result of degeneration in the brain-stem and basal forebrain cholinergic projection neurons. A distinctive pattern of ubiquitin and α-synuclein immunoreactive neuritic degeneration has additionally been identified in DLB. ‘Lewy neurites’ are seen in the substantia nigra, hippocampal region CA2/3, dorsal vagal nucleus, basal nucleus of Meynert and transentorhinal cortex. These extensive neuritic changes are probably more relevant for neuropsychiatric symptom formation than the relatively sparsely distributed cortical Lewy bodies (Gómez-Tortosa et al, 1999).
+
+Some Alzheimer-type changes are also present in the majority of patients with DLB. Senile plaques, diffuse and neuritic, are present in similar density and distribution as in Alzheimer's disease, but the other hallmark lesions of Alzheimer's disease, neurofibrillary tangles, are relatively few (Weiner, 1999), as are biochemical measures of tau pathology. Stringent neuropathological criteria for Alzheimer's disease require above-threshold numbers of neocortical neurofibrillary tangles. Therefore, most DLB cases should probably be regarded as distinct from Alzheimer's disease and not as a ‘variant’ of it. Minor vascular disease also occurs in about 30%, but its clinical significance is unknown. Mixed pathological changes are therefore usually seen in DLB (Holmes et al, 1999), cases of pure DLB without any plaques, tangles or vascular lesions being uncommon.
+
+
+
+CLINICAL FEATURES
+
+Dementia is usually, but not always, the presenting feature — a minority of patients present with parkinsonism alone, some with psychiatric disorder in the absence of dementia, and others with orthostatic hypotension, falls or transient disturbances of consciousness (Byrne et al, 1989; McKeith et al, 1992) (Table 1).
+
+View this table:
+In this window In a new window
+Table 1 A comparison of clinical symptoms in Alzheimer's disease and dementia with Lewy bodies
+Age at onset ranges from 50 to 83 years and at death from 68 to 92 years, with a slight excess of males. Mean survival time is similar to that for Alzheimer's disease, although some DLB patients show rapid symptom progression and death within 1-2 years of onset. Cognitive function appears to worsen at the same rate as in Alzheimer's disease, and parkinsonism at a rate similar to that in Parkinson's disease: approximately 10% decline per year for each.
+
+Fluctuation in cognitive performance and level of consciousness is the most characteristic feature of DLB. It is usually evident on a day-to-day basis, and often apparent within much shorter periods. The marked amplitude between best and worst performance distinguishes it from the minor day-to-day variations that commonly occur in dementia of any cause. About two-thirds of patients report visual hallucinations, repeatedly seeing people and animals that appear to be real but make no noise. Emotional responses to these experiences vary from intense fear to indifference or even amusement. Depressive symptoms are common and 40% of patients have a major depressive episode, similar to the rate in Parkinson's disease and significantly greater than in Alzheimer's disease.
+
+Up to 70% of patients have parkinsonism; bradykinesia, limb rigidity and gait disorder are the most common manifestations. When present, these symptoms may be as severe in DLB as in Parkinson's disease. Recurrent falls and syncope occur in up to a third, presumably reflecting autonomic nervous system involvement. Transient disturbances of consciousness in which patients are found mute and unresponsive for periods of several minutes may represent the extreme of fluctuation in attention and arousal, but are often mistaken for transient ischaemic attacks, despite a lack of focal neurological signs.
+
+
+
+DIAGNOSIS AND DIFFERENTIAL DIAGNOSIS
+
+There are four main categories of disorder that should be considered in the differential diagnosis of DLB. These are other dementia syndromes; other causes of delirium; other neurological syndromes such as Parkinson's disease, progressive supranuclear palsy, multi-system atrophy or Creutzfeldt—Jakob disease; and other psychiatric disorders such as late-onset delusional disorder, depressive psychosis and mania. The most frequent clinical misdiagnosis of DLB is as Alzheimer's disease. Accurate diagnosis rests upon careful history-taking and physical and mental state examinations. Although no specific biological test or marker is available, clinical investigations may be helpful (Table 2).
+
+View this table:
+In this window In a new window
+Table 2 The role of clinical investigations in discriminating Alzheimer's disease and dementia with Lewy bodies
+Structural brain imaging in DLB reveals generalised atrophy, although 40% of patients show preservation of medial temporal lobe structures, unlike Alzheimer's disease. There is no difference from Alzheimer's disease in terms of degree of ventricular enlargement, frontal lobe atrophy or presence of white-matter changes on magnetic resonance imaging (Barber et al, 1999). Using single-photon emission computed tomography (SPECT), significant reduction in striatal uptake of a ligand for the presynaptic dopamine transporter site (FP-CIT) is seen in DLB but not in Alzheimer's disease, and this may prove to be a highly specific and widely applicable diagnostic test (Walker et al, 1999).
+
+The consensus criteria for the clinical diagnosis of DLB are given in the Appendix (McKeith et al, 1996). Particular emphasis needs to be given to recognising the characteristic pattern of cognitive dysfunction with prominent attentional deficits, visuospatial impairment and frontosubcortical dysfunction. In contrast to Alzheimer's disease there is often a relative preservation of short-term memory. Probable DLB is diagnosed if any two of the three core symptoms (fluctuating cognition, visual hallucinations, spontaneous motor features of parkinsonism) are additionally present.
+
+Several autopsy validation studies have examined the diagnostic accuracy of the consensus criteria and find uniformly high specificity, usually 0.9-1.0, but sensitivity of case detection is more variable and generally lower (0.22-0.83). Identifying cognitive fluctuation poses clinicians the greatest diagnostic difficulty. Standardised methods for quantifying fluctuation in dementia have now been published. The Clinician Assessment of Fluctuation is a clinician-administered severity scale, and the One Day Fluctuation Assessment Scale is based on a caregiver questionnaire. If independently confirmed, these methods have the potential to significantly increase the reliability — and therefore the validity — of a diagnosis of DLB (Walker et al, 2000).
+
+
+
+MANAGEMENT
+
+Antipsychotic pharmacotherapy
+Managing psychosis is one of the most difficult challenges in the care of patients with DLB. It is a major source of distress to patients, exacerbates the carer's burden, and is a determinant of earlier transfer to institutional care and an increased mortality. Neuroleptic agents are usually the drugs of choice for psychosis in dementia. In DLB, however, they are preferably avoided or used only with great caution, since severe neuroleptic sensitivity reactions can precipitate irreversible parkinsonism, further impair consciousness level, and induce autonomic disturbances reminiscent of neuroleptic malignant syndrome. They occur in 40-50% of neuroleptic-treated patients with DLB and are associated with a two- to threefold increased mortality. Acute D2 receptor blockade is thought to mediate these effects, and despite some promising initial reports, atypical and novel antipsychotic agents such as risperidone and olanzapine seem to be about as likely to cause adverse reactions as older, ‘typical’ drugs. Sedation, increased confusion and worsening of parkinsonism are the most common side-effects.
+
+Cholinesterase inhibitors
+There have been several reports that patients who respond well to cholinesterase inhibitor (ChEI) treatments are more likely to have DLB than Alzheimer's disease at autopsy. This is consistent with the neurochemical profile of DLB and the fact that post-synaptic cortical muscarinic receptors are functionally intact. Case reports suggest that apathy, somnolence, hallucinations and delirium are symptoms of DLB that improve substantially with ChEI therapy (e.g. Samuel et al, 2000). Eleven patients with DLB, mean age 78.5 years, treated with rivastigmine in an open-label study over 12 weeks had reductions in delusions (73%), apathy (61%), agitation (52%) and hallucinations (31%) compared with baseline. Forty-five per cent (5) of the patients experienced significant clinical improvements, defined by a reduction of more than 50% in a composite score comprising hallucinations, delusions, apathy and agitation. Five of seven patients lost all of their delusions, three of eight stopped hallucinating and three had significantly fewer or less troublesome hallucinations. Carers and patients regarded these improvements, which had not previously been observed with other treatments, including low-dose neuroleptics, as substantial. No patient became more Parkinsonian (McKeith et al, 2000a).
+
+A multi-centre, randomised controlled trial of rivastigmine supports these early case reports. One hundred and twenty patients from the UK, Spain and Italy, fulfilling consensus criteria for probable DLB, were given rivastigmine at daily doses up to 12 mg (mean end-dose 9.4 mg) or placebo for 20 weeks. A 3-week drug-free period followed. Patients on rivastigmine showed significantly reduced core psychiatric symptoms of DLB, i.e. they were less apathetic and had less anxiety, delusions and hallucinations while receiving treatment. Approximately twice as many patients on rivastigmine (63%) as on placebo (30%) showed at least a 30% improvement from baseline with regard to psychiatric symptoms typical of DLB. Active-treatment patients were also able to perform significantly faster and better on a computerised battery of neuropsychological tests, particularly on tasks with a substantial attentional component. After drug discontinuation the differences between rivastigmine and placebo tended to disappear. Some of the known adverse events of ChEI (nausea, vomiting, anorexia) were seen more frequently on rivastigmine than on placebo, but safety and tolerability of the drug were judged acceptable (McKeith et al, 2000b).
+
+Although further, confirmatory studies are required, there is substantial evidence accumulating that ChEIs are effective in some (although not all) DLB patients, and the class should be considered as first-line pharmacological treatments for cognitive dysfunction, apathy, psychosis and agitation in this disorder.
+
+Other medications
+There is no available information about the effects of antidepressants, anticonvulsants or benzodiazepines on psychiatric and behavioural symptoms. It has been suggested that clonazepam may be helpful in controlling the characteristic sleep disturbance of DLB with its vivid dreams and a loss of normal muscle atonia in rapid eye movement sleep, which lead to excessive jerking or complex vigorous movements. Although limited levodopa responsiveness has generally been reported in DLB, this may reflect a failure to treat, or underdosage, because of concerns about exacerbating psychotic symptoms. A cautious trial of levodopa is recommended in DLB patients with clinically significant motor disability.

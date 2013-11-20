@@ -1,0 +1,125 @@
+﻿
+GM Voices is nestled on a rolling, leafy road in Alpharetta, Georgia, an affluent suburb of Atlanta. A recording studio specializing in voice-over work, it produces narration for corporate training videos, voicemail system prompts, and the like — not exactly sexy stuff, but steady, and for the best actors, lucrative. September Day is one such actor, and on a morning in 2011, she arrived to begin work on a special project.
+
+Day, a red-headed, 37-year-old mother of three who’s done work for many high-profile clients — companies like MTV, Dominos Pizza, and Nickelodeon — had been given few details. She knew she’d been hired to do a “text-to-speech” product — something where a computer reads text back in human speech — and she knew that she’d be doing her “early ‘20s” voice (she also has a spunky teen voice she’s used for, among other things, an acne infomercial).
+
+ 
+
+Day confidently rolled in having just given birth to her daughter a mere four days earlier (“VO is fantastic —nobody is going to judge me for wearing maternity clothes!”) She wasn’t prepared for what was about to hit her.
+
+Ivona, a Polish text-to-speech company, was creating a computerized voice that would be incorporated into the Kindle Fire, the mini version of Amazon’s popular reader tablet. When Kindle Fire owners clicked a setting, they’d be able to hear some of their books read to them by “Salli.”
+
+For six to seven hours a day, for eight days, Day read passages from Alice in Wonderland, bits of news off the AP wire, and sometimes random sentences, sitting as still in her chair as possible. She read hundreds of numbers, in different cadences. “One! One. One? Two! Two. Two?”
+
+“It was like the Ironman of VO,” says Day. “I had not experienced anything like that. I am the queen of the 30–60 second TV spot. That’s my safe place.” She had to take a break after the fourth day, because she had gone hoarse. But then Day soldiered on, and became the voice of many a breezy beach read.
+
+FOR EVERY SIRI, THERE’S AN ACTOR SITTING IN A SOUND BOOTH, REALLY NEEDING TO GO TO THE BATHROOM
+Day’s experience is becoming increasingly common, as talking devices gain a commercial foothold. No longer a novelty, or something marketed primarily to the disabled, speaking gadgets, a la Siri, GPS systems, and text-to-speech enabled apps, are on the rise. It’s easy to see the necessity: when you’re driving you can’t Google, so you ask your phone to find a Starbucks. You’re at the gym; you have your RSS reader reading your financial news to you. Google, Apple, Microsoft, and even Amazon have all invested heavily in speech, and many believe we’re just seeing the beginning of this literal conversation with technology.
+
+Today’s talking phones and cars are almost human sounding. That’s because they are human. Or at least, they once were.
+
+For every Siri, there’s an actor sitting in a sound booth, really needing to go to the bathroom or scratch an itch. Once that person finishes her job, she can go home. But her voice has only begun its journey. The story of that journey, from human to replicant, is one of a series of complex technological processes that would have been impossible 10 years ago. But it’s also the story of our stubborn desire as social beings to form relationships, even with unconscious objects. In order to establish trust in our machines, we have to begin to suspend disbelief. This is the story of how we fool ourselves.
+
+
+RANSOM NOTE STYLE
+J. Brant Ward, the senior director of advanced speech design and development at Nuance, is a former composer who went from writing string quartets on synthesizers to composing speech using synthetic voices. He’s been working in the Silicon Valley TTS industry for over a decade.
+
+Nuance is one of the biggest independent speech recognition and text-to-speech companies in the world. (Speech recognition is a bit like the reverse of text-to-speech — the computer hears what you’re saying, and converts it into text.) The company does many things, including supplying the healthcare industry with voice-enabled clinical documentation, meaning doctors can speak rather than type in their notes. It also develops voice recognition and text-to-speech capabilities for everything from tablets to cars.
+
+THE TEXT-TO-SPEECH INDUSTRY IS EXTREMELY COMPETITIVE, AND HIGHLY SECRETIVE
+Ward and the company’s senior design lead, David Vazquez, are part of the team working out of Nuance’s Sunnyvale, CA offices creating next-generation synthetic voices. They describe their work as “part art, part science.”
+
+The text-to-speech industry is extremely competitive, and highly secretive. Even though Nuance CEO Paul Ricci confirmed that Nuance is a "fundamental provider for Apple" at the D11 conference earlier this year, Ward and Vazquez coyly change the subject when asked if the company is behind Siri.
+
+That said, they’ve agreed to explain, at least in broad strokes, how they build voices. Needless to say, one doesn’t start by recording every single word in the dictionary. But when you’re talking about an application that reads any news story that comes into your RSS feed, or looks up stuff on the web for you, it needs to be able to say every word in the dictionary.
+
+“Just say you want to know where the nearest florist is,” Ward says. “Well, there are 27 million businesses in this country alone. You’re not going to be able to record every single one of them.”
+
+“It’s about finding short cuts,” says Vazquez, a trim, bearded man who exudes a laid-back joviality. He rifles through a packet of stapled together papers that contains a script. It doesn’t look like a script in the Hamlet sense of the word, but rather, an Excel-type grid containing weird sentences.
+
+Scratching the collar of my neck, where humans once had gills.
+
+Most of the sentences are chosen, says Vazquez, because they are “phonetically rich:” that is, they contain lots of different combinations of phonemes. Phonemes are the acoustic building blocks of language, i.e.: the “K” sound in “cat”.
+
+“The sentences are sort of like tongue twisters,” says Vazquez. Later, a linguist on his team objects to his use of this expression, and calls them “non sequiturs.”
+
+“The point is, the more data we have, the more lifelike it’s going to be,” says Ward. The sentences, while devoid of contextual meaning, are packed with data.
+
+After the script is recorded with a live voice actor, a tedious process that can take months, the really hard work begins. Words and sentences are analyzed, catalogued, and tagged in a big database, a complicated job involving a team of dedicated linguists, as well as proprietary linguistic software.
+
+When that’s complete, Nuance’s text-to-speech engine can look for just the right bits of recorded sound, and combine those with other bits of recorded sound on the fly, creating words and phrases that the actor may have never actually uttered, but that sound a lot like the actor talking, because technically it is the actor’s voice.
+
+GETTING A COMPUTER TO ASSEMBLE A HUMAN-SOUNDING VOICE IS A HERCULEAN TASK
+The official name for this type of voice building is “unit selection” or “concatenative speech synthesis.” Ward describes it as “a little like a ransom note,” but saying it’s like a ransom note, where letters are chopped up and pasted back together to form new sentences, is a radical oversimplification of how we make language.
+
+As humans, we learn to speak before we learn to write. Speaking is unconscious; we do it, we don’t think about how we’re doing it, and we certainly aren’t thinking about the minute fluctuations of stress, intonation, pitch, speed, tongue position, relationships between phonemes, and myriad other factors that allow us to seamlessly and effectively communicate complex ideas and emotions. But in order to get a computer to assemble a human-sounding voice, all of those things have to be considered, a task described by one language professor as “Herculean.”
+
+Take, for instance, the phoneme “A” as in “cat”. It will sound slightly different if it’s the center of a syllable, as in “catty,” versus at the beginning of a syllable, as in “alligator.” And that “a” will also sound a little different if it’s in a stressed syllable, as it is in “catty,” versus a non-stressed syllable, as in the word “androgynous.”
+
+Sentence construction presents other challenges. The simple task of making plane reservations isn’t so simple for a synthetic voice.
+
+“If you’re saying something like, ‘Are you going to San Francisco, or New York?’ the end of the sentence goes up in pitch,” says Vazquez. But if it’s a multiple choice question, say, “San Francisco, Philly, or New York?” then “York” goes down in pitch. Screw stuff like that up, and all of a sudden the user experiences cognitive dissonance (That was weird — oh right, I’m talking to a computer, not a person.)
+
+You shouldn’t think, “I’m talking to a computer.” You shouldn’t think anything at all.
+
+“My kids interact with Siri like she’s a sentient being,” says Ward. “They ask her to find stuff for them. They don’t know the difference.”
+
+
+DAISY, DAISY, GIVE ME YOUR ANSWER DO
+Attempts to synthesize the human voice date back to the 1700s, when scientific inventors experimented with reeds and bellows to get vowel sounds. But the most significant early advance was the Vocoder: a machine developed by Bell Labs in 1928 that transmitted speech electronically, in a kind of code, for allied forces in WWII. The Vocoder was the inspiration for author Arthur C. Clarke’s evil talking computer, Hal 9000, in the book 2001 a Space Odyssey, and a few decades later it produced trendy effects used by pop musicians like Kraftwerk.
+
+EARLY ROBOTIC VOICES SOUNDED ROBOTIC BECAUSE THEY WERE TOTALLY ROBOTIC
+In the 70 plus years that ensued, there were many new takes on speech synthesis: Texas Instruments’ Speak and Spell, the Knight Rider-esque talking cars of the 1980s (“FUEL level is LOW!”) and the voice built for physicist Stephen Hawking.
+
+The difference between those voices and the voices of today, however, is as stark as the difference between Splenda and pure cane sugar. These early robotic voices sounded robotic because they were totally robotic. Prior to the late ‘90s, computing power just wasn’t great enough to do concatenated synthesis, where a real human voice is recorded, minutely dissected, catalogued, and reassembled. Instead, you made a computer speak by programming in a set of acoustic parameters, like you would any synthesizer.
+
+
+“Those machines were simple compared to how complex the human vocal tract is,” explains Adam Wayment, VP of engineering at Cepstral (KEP-stral), a Pittsburgh, PA-based text-to-speech company that has created over 50 different voices since its inception in 2001. “Sound comes from the vocal cords, the nasal passages, leaks through the cheeks, the sides of mouth, reverberates around the tongue, all those tissues are mushy ... So the source itself isn’t a neat little square wave. It’s tissue vibrating.”
+
+Hence the synthesizer approach produced speech that was intelligible, but not remotely human. Not even a child would be fooled into thinking they could actually chat with their Speak and Spell.
+
+By the early 2000s, computers finally got fast enough to search through giant databases for the right combinations of new words, allowing companies to start producing natural-sounding concatenated voices. Around the same time, artificial intelligence developed to the point where computers could make increasingly sophisticated decisions with regards to language. When you say the word “wind,” for instance, do you pronounce it the way you would if saying, “the wind is blowing” or “wind” as in “wind the thread around the spool”? An adult human will make the correct determination automatically based on context. A computer must be taught about context.
+
+Robo-voices not withstanding, the promise of text-to-speech has been evident since the dawn of personal computing — Apple even offered a text-to-speech reader in the first Mac. But it was the widespread adoption of mobile technologies and the internet that really fired up the demand for voices. The ability to access information, hands free, is a tantalizing proposition, particularly when coupled with speech recognition technology.
+
+THERE IS ONE GROUP THAT IS SURPRISINGLY NOT PSYCHED ABOUT IT: VOICE ACTORS
+You can see how important text-to-speech has become by watching what the tech superpowers are doing. In a letter to shareholders last November, Microsoft CEO Steve Ballmer stressed the importance of “natural language interpretation and machine learning,” that is, the artificial intelligence technologies underlying speech. There have been a flurry of acquisitions: Google bought UK-based speech synthesis company, Phonetic Arts three years ago, and back in January, Amazon acquired Ivona, the Polish text-to-speech firm that recorded Day’s voice for the Kindle Fire.
+
+While the tech sector gets excited about the future of speech, there is one group that is surprisingly not psyched about it: voice actors. That’s right, the very people supplying the raw materials. The reason might be they just don’t understand the implications. Although there are actors, like Day, or Allison Dufty, a voice-over actress who has done many jobs for Nuance, who are willing to speak publicly about their work, those actors are few and far between. Ironclad NDAs keep many actors from associating themselves with specific brands or products. Talent agents who have relationships with technology companies who do this work are often hush-hush, to maintain their competitive advantage. And in the absence of information, paranoia reigns supreme.
+
+“Within our industry, text-to-speech [TTS] is seen as a threat,” says Stephanie Ciccarelli, chief marketing officer at Voices.com, an online marketplace for voice actors, and co-author of the book Voice Acting for Dummies. “They think it’s going to replace human voice actors.”
+
+An email to one successful voice actor who has done narration for Audible books, work for Wells Fargo, NPR, AT&T, and others, got a polite but emphatic response: “The only thing I can tell you about voice actors' opinion on TTS is that we all pretty much think it's abominable… Maybe one day it'll advance to the level that 3D animation is currently in, but right now it's almost a joke.”
+
+VOICE-ACTIVATED ROACH SPRAY
+Back at Nuance, Ward and Vazquez are excited to demo new technologies they’ve been working on. Ward explains that Nuance can weave bits of synthesized speech together with concatenated speech, and make it sound natural, and soon, he says, they’ll be able to make an entirely synthesized voice that sounds good, too. Computing power has increased to the point where it’s possible to build something that doesn’t sound like a totally fake robot voice.
+
+“It will still be still based on a real person’s voice,” he says. Even a synthesized voice needs a model to mimic.
+
+He and Vazquez show me a neat trick where they’re able to take acoustic qualities from one speaker’s voice, and qualities from a second person’s voice, and create an amalgamation of the two.
+
+Another day, they demo a product that combines a speaking RSS reader with an intelligent music engine: the program can tell whether the news it’s reading is happy or sad, and selects an appropriate piece of music to play behind it, giving the performance a broadcast feel.
+
+
+They latch onto the word “personalization,” throwing around ideas about how one day, we might have our Tweets read to us in the voice of the person who wrote them, or be able to walk into our home and say “it’s me,” and have our thermostat adjust to the temperature it knows we want, using speech recognition and artificial intelligence. I tell them a random anecdote about a famous piano player who once built a chair that squirted roach spray, activated when he smoked a joint, to mask the smell.
+
+“Yeah, you could use speech recognition to spray something into the air, so your wife wouldn’t know you were smoking weed,” says Ward.
+
+All jokes aside, this general concept doesn’t seem too far away, considering the existence of smart home technologies like Nest, a thermostat that learns what temperatures you like, and self-adjusts when you come and go. Nor does the reading of Tweets in one’s own voice: Cepstral recently created a custom pro bono TTS voice for a blind teenager based on audio recordings he did in his bedroom, proving you don’t need professional-quality recordings to get a passably decent result. CereProc (SARAH-Prock), a 12-person Edinburgh-based TTS firm that created a voice for the late film critic Roger Ebert after he lost his larynx from oral cancer, plans to launch a personal voice cloning product soon. Then all that needs to happen is that your TTS reader be able to channel the other peoples’ voices.
+
+IT WOULD BE NICE IF VOICE SYSTEMS LIKE SIRI UNDERSTOOD THE USERS’ EMOTIONAL STATE AND REACTED ACCORDINGLY
+But even if vanity voices don’t take off (a lot of people really hate the sound of their own voice, after all,) there still remains the promise of creating better synthetic voices that allow us to have a more fulfilling relationship with technology.
+
+“Siri is incredibly easy to understand, but where we still need to break through a barrier is having Siri convey the emotional and social characteristics that are so important in regular speech,” says Benjamin Munson, a professor of speech, language, and hearing science at the University of Minnesota. At a bare minimum, he says, it would be nice if voice systems like Siri understood the users’ emotional state and reacted accordingly, the way a human attendant may adopt a soothing voice to deal with an enraged customer, for instance. Synthesizing so-called “paralinguistics,” that is, the social cues we communicate through language, is difficult, says Munson, but notes that academic researchers are beginning to study it.
+
+“When I got into this industry, most of the speech synthesis market was for [automated voice mail systems], and the idea of producing a voice that could really communicate a sense of emotion and identity wasn’t important,” says Matthew Aylett, Chief Scientific Officer at CereProc. “After all, you don’t want the bank to read your balance in a sad voice if you’ve not got much money.”
+
+But now that synthetic voices are reading blog posts and even entire Kindle books, carrying on conversations about scheduling, and telling you how to get to grandma’s house, it’s time, says Aylett, to shift out of neutral.
+
+“R2D2 from Star Wars was always my favorite robot,” says Aylett. “He still sounded like a robot, but had great character, emotion, and sarcasm. We try to produce voices with a sense of character.”
+
+Still stuck on the talking roach spray chair, chatting cars, and the idea of having my Twitter feed read to me in a chorus of friends’ voices, I asked Wayment from Cepstral, how important increased artificial intelligence would be for future TTS applications. He told me “very,” but then said: “but not in the way you might think.”
+
+Recently, said Wayment, he spoke with a visually impaired customer who said: Do you know how hard it is to use a microwave? When they’re all different and have different displays? Which led Wayment to imagine a world full of talking microwaves. He paused, then said seriously: “I think the day is coming where even little devices are speaking, but we run the risk of just filling our lives with noise. It’s not going to be enough to have devices talking, they’re going to have to tell us things we need and want to know. They’ll have to have insight.”
+
+And if they don’t, I see a new business opportunity: the synthesis of silence.
