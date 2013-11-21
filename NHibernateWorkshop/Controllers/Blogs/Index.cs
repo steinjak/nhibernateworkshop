@@ -40,6 +40,7 @@ namespace NHibernateWorkshop.Controllers.Blogs
             var pageSize = 20;
             var skip = (Page - 1)*pageSize;
 
+            //return session.Query<Blog>().Skip(skip).Take(pageSize).Cacheable();
             return session.Query<Blog>().Skip(skip).Take(pageSize);
         }
     }

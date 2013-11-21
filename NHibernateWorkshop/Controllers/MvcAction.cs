@@ -22,6 +22,29 @@ namespace NHibernateWorkshop.Controllers
             return RedirectToAction(info.Action, info.Controller, routeValues);
         }
 
+        protected override void OnResultExecuted(ResultExecutedContext filterContext)
+        {
+            base.OnResultExecuted(filterContext);
+            // NOTE: This should be in OnActionExecuted, the view shouldn't be
+            // able to access the DB (not even through lazy load)
+            if (filterContext.Exception == null)
+            {
+                try
+                {
+                    SessionManager.Commit();
+                }
+                catch
+                {
+                    SessionManager.Rollback();
+                    throw;
+                }
+            }
+            else
+            {
+                SessionManager.Rollback();
+            }
+        }
+
         private class HttpMethodActionInvoker : ControllerActionInvoker
         {
             private readonly Type controllerActionType;
