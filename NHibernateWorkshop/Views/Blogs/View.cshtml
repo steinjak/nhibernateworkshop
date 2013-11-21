@@ -5,6 +5,25 @@
     ViewBag.Title = "All blogs";
 }
 
+<div class="jumbotron">
+    <h1>@Model.Blog.Title</h1>
+    <p class="lead">
+        Thougts and ideas from <strong>@Model.Blog.Owner.Name</strong> with contributions from @string.Join(", ", Model.Blog.Contributors.Select(c => c.User.Name))
+    </p>
+</div>
+<div class="row">
+    @foreach (var post in Model.FeaturedPosts)
+    {
+        <div class="col-md-4">
+            <h2>@post.Title.Substring(0, 20)</h2>
+            <img src="@post.FeaturedImage.Url" style="width:360px" />
+            <p>
+                @post.Content.Substring(0, 100)
+            </p>
+            <p><a class="btn btn-default" href="@(Url.MvcAction<Read>(new {id=post.Id}))">Read &raquo;</a></p>
+        </div>
+    }
+</div>
 <h2>@Model.Blog.Title</h2>
 <p>By: @Model.Blog.Owner.Name</p>
 <div>
@@ -13,6 +32,7 @@
         <div class="media">
             <a class="pull-left" href="@(Url.MvcAction<Read>(new {id=post.Id}))">
                 <img src="@post.FeaturedImage.Url" alt="Featured image at @post.FeaturedImage.Url" />
+                <div>@post.PublishedOn</div>
             </a>
             <div class="media-body">
                 <h3><a href="@(Url.MvcAction<Read>(new { id = post.Id }))">@post.Title</a></h3>

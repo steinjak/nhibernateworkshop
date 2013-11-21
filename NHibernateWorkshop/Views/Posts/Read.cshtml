@@ -5,6 +5,9 @@
 }
 
 <h2>@Model.Post.Title</h2>
+<div>
+    Written by @Model.Post.Author.Name at @Model.Post.PublishedOn
+</div>
 <div class="media">
     <div class="pull-left">
         <img src="@Model.Post.FeaturedImage.Url" />

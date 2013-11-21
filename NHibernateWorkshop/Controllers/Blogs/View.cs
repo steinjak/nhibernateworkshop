@@ -13,7 +13,8 @@ namespace NHibernateWorkshop.Controllers.Blogs
             return View(new ViewBlogModel
             {
                 Blog = blog,
-                Posts = blog.Posts.Take(15).ToArray()
+                Posts = blog.Posts.Where(p => p.PublishedOn.HasValue).OrderByDescending(p => p.PublishedOn).Take(15).ToArray(),
+                FeaturedPosts = blog.Posts.Where(p => p.IsFeatured && p.PublishedOn.HasValue).OrderByDescending(p => p.PublishedOn).Take(3).ToArray()
             });
         }
     }
@@ -22,5 +23,6 @@ namespace NHibernateWorkshop.Controllers.Blogs
     {
         public Blog Blog { get; set; }
         public Post[] Posts { get; set; }
+        public Post[] FeaturedPosts { get; set; }
     }
 }

@@ -226,7 +226,7 @@ namespace NHibernateWorkshop.Tests.Utils
                 {
                     Name = RandomSentence() + ".jpg",
                     Owner = owner,
-                    Url = string.Format("http://lorempixel.com/390/197/{0}/{1}", tags, imageNumber++)
+                    Url = string.Format("http://lorempixel.com/390/197/{0}/{1}", tags, (imageNumber++ % 10) +1)
                 };
             }
 
