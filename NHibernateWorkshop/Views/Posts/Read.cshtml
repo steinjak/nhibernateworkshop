@@ -1,0 +1,33 @@
+﻿@model NHibernateWorkshop.Controllers.Posts.ReadPostModel
+
+@{
+    ViewBag.Title = Model.Post.Title;
+}
+
+<h2>@Model.Post.Title</h2>
+<div class="media">
+    <div class="pull-left">
+        <img src="@Model.Post.FeaturedImage.Url" />
+        @foreach (var image in Model.Post.Media)
+        {
+            <br/><img src="@image.Url"/>
+        }
+    </div>
+    <div class="media-body">
+        @Html.Raw(Model.Post.Content.Replace("\n", "<br />\n"))
+    </div>
+</div>
+<div style="margin-top: 2em">
+    @foreach (var comment in Model.Post.Comments)
+    {
+        <div class="media">
+            <div class="pull-left" style="width: 100px">
+                <img class="pull-left" src="@string.Format("http://www.gravatar.com/avatar/{0}?s=100&d=monsterid", comment.Author.AuthorName.Md5())" />
+                <div class="clearfix">@comment.Author.AuthorName</div>
+            </div>
+            <div class="media-body">
+                @comment.Text
+            </div>
+        </div>
+    }
+</div>

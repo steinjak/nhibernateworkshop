@@ -136,8 +136,11 @@
     <Compile Include="Controllers\Blogs\Index.cs" />
     <Compile Include="Controllers\Blogs\View.cs" />
     <Compile Include="Controllers\ControllerModule.cs" />
+    <Compile Include="Controllers\HashExtensions.cs" />
     <Compile Include="Controllers\Home\Index.cs" />
     <Compile Include="Controllers\MvcAction.cs" />
+    <Compile Include="Controllers\Posts\Read.cs" />
+    <Compile Include="Controllers\UrlExtensions.cs" />
     <Compile Include="Data\DbModule.cs" />
     <Compile Include="Data\EntityStore.cs" />
     <Compile Include="Data\MapByCode\IMappingExceptions.cs" />
@@ -194,6 +197,7 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Blogs\Index.cshtml" />
     <Content Include="Views\Blogs\View.cshtml" />
+    <Content Include="Views\Posts\Read.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
