@@ -1,0 +1,15 @@
+﻿@model NHibernateWorkshop.Controllers.Blogs.BlogIndexModel
+
+@{
+    ViewBag.Title = "All blogs";
+}
+
+<h2>All blogs</h2>
+<ul>
+    @foreach (var blog in Model.Blogs)
+    {
+        <li>
+            <a href="@Url.Action("View", new {id=blog.Id})">@blog.Title</a>
+        </li>
+    }
+</ul>

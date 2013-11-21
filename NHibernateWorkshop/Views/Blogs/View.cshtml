@@ -1,0 +1,22 @@
+﻿@model NHibernateWorkshop.Controllers.Blogs.ViewBlogModel
+
+@{
+    ViewBag.Title = "All blogs";
+}
+
+<h2>@Model.Blog.Title</h2>
+<p>By: @Model.Blog.Owner.Name</p>
+<div>
+    @foreach (var post in Model.Posts)
+    {
+        <div class="media">
+            <a class="pull-left" href="@Url.Action("View", new {id=post.Id})">
+                <img src="@post.FeaturedImage.Url" alt="Featured image at @post.FeaturedImage.Url" />
+            </a>
+            <div class="media-body">
+                <h3>@post.Title</h3>
+                @post.Content.Substring(0, 500)
+            </div>
+        </div>
+    }
+</div>

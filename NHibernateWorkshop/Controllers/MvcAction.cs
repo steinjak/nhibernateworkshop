@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Web.Mvc;
 using NHibernateWorkshop.Data;
+using Ninject;
 
 namespace NHibernateWorkshop.Controllers
 {
     public abstract class MvcAction : Controller
     {
+        [Inject]
         public SessionManager SessionManager { get; set; }
         protected EntityStore Db { get { return SessionManager.GetEntityStore(); } }
 

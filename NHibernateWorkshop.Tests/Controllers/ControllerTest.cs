@@ -2,13 +2,21 @@
 using NHibernateWorkshop.Controllers;
 using NHibernateWorkshop.Data;
 using NUnit.Framework;
+using Plant.Core;
 
 namespace NHibernateWorkshop.Tests.Controllers
 {
     public abstract class ControllerTest
     {
+        protected static BasePlant Plant { get; private set; }
+
         private DbTestConfig NhConfig { get; set; }
         protected ISession Session { get { return NhConfig.Session; } }
+
+        static ControllerTest()
+        {
+            Plant = new BasePlant().WithBlueprintsFromAssemblyOf<ControllerTest>();
+        }
 
         [SetUp]
         public void EmptyDb()

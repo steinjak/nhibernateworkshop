@@ -11,7 +11,7 @@ namespace NHibernateWorkshop
         public static void Configure()
         {
             var kernel = new StandardKernel(new ControllerModule(), new DbModule());
-            ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory(kernel, "NHibernateWorkshop.Controllers"));
+            ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory(kernel, "NHibernateWorkshop.Controllers".ToLowerInvariant()));
         }
 
         private class NinjectControllerFactory : DefaultControllerFactory
