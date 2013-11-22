@@ -143,6 +143,11 @@
     <Compile Include="Controllers\UrlExtensions.cs" />
     <Compile Include="Data\DbModule.cs" />
     <Compile Include="Data\EntityStore.cs" />
+    <Compile Include="Data\FluentMappings\BlogMap.cs" />
+    <Compile Include="Data\FluentMappings\ContributorMap.cs" />
+    <Compile Include="Data\FluentMappings\MediaFileMap.cs" />
+    <Compile Include="Data\FluentMappings\PostMap.cs" />
+    <Compile Include="Data\FluentMappings\UserMap.cs" />
     <Compile Include="Data\MapByCode\IMappingExceptions.cs" />
     <Compile Include="Data\MapByCode\MapByCodeMapper.cs" />
     <Compile Include="Data\MapByCode\MappingExceptionsForModel.cs" />

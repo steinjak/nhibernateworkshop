@@ -174,7 +174,7 @@ namespace NHibernateWorkshop.Tests.Utils
 
         private class Theme
         {
-            private static Theme[] themes = new[]
+            private static readonly Theme[] Themes = new[]
             {
                 new Theme("crime", "cats"), 
                 new Theme("kronikk", "city"), 
@@ -183,17 +183,18 @@ namespace NHibernateWorkshop.Tests.Utils
                 new Theme("verge", "business"), 
             };
 
-            private readonly string tags;
             private static readonly Random Random = new Random();
+            private static readonly Regex MatchSentences = new Regex(@"[\.\?!]\s*([A-Z].*[\.\?!])", RegexOptions.Compiled);
             private readonly string text;
+            private readonly string tags;
             private int imageNumber = 1;
 
             public static Theme PickOne()
             {
-                return themes[Random.Next(themes.Length)];
+                return Themes[Random.Next(Themes.Length)];
             }
 
-            public Theme(string name, string tags)
+            private Theme(string name, string tags)
             {
                 this.tags = tags;
                 text = File.ReadAllText("Utils\\Text\\" + name + ".txt");
@@ -211,7 +212,7 @@ namespace NHibernateWorkshop.Tests.Utils
 
             public string GeneratePostTitle()
             {
-                return RandomSentence(100);
+                return RandomSentence(14);
             }
 
             public string GeneratePostContent()
@@ -233,7 +234,7 @@ namespace NHibernateWorkshop.Tests.Utils
             private string RandomSentence(int maxWords = 7)
             {
                 var excerpt = GetExcerpt(300, 500);
-                var match = new Regex(@"[\.\?!]\s*([A-Z].*[\.\?!])").Match(excerpt);
+                var match = MatchSentences.Match(excerpt);
                 return FirstWordsOf(match.Success ? match.Groups[1].Captures[0].Value : excerpt.Substring(21), maxWords);
             }
 
