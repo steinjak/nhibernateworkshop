@@ -1,9 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using System.Web.Mvc;
-using NHibernate;
-using NHibernate.Linq;
-using NHibernateWorkshop.Data;
+using NHibernateWorkshop.Data.Queries;
 using NHibernateWorkshop.Models;
 
 namespace NHibernateWorkshop.Controllers.Blogs
@@ -29,19 +26,5 @@ namespace NHibernateWorkshop.Controllers.Blogs
         public int Page { get; set; }
         public string UrlToNextPage { get; set; }
         public string UrlToPreviousPage { get; set; }
-    }
-
-    public class BlogsPaged : Query<IEnumerable<Blog>>
-    {
-        public int Page { get; set; }
-
-        public override IEnumerable<Blog> Execute(ISession session)
-        {
-            var pageSize = 20;
-            var skip = (Page - 1)*pageSize;
-
-            //return session.Query<Blog>().Skip(skip).Take(pageSize).Cacheable();
-            return session.Query<Blog>().Skip(skip).Take(pageSize);
-        }
     }
 }

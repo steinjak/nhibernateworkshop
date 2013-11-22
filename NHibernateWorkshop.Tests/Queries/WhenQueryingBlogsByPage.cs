@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using NHibernate.Linq;
 using NHibernateWorkshop.Controllers.Blogs;
+using NHibernateWorkshop.Data.Queries;
 using NHibernateWorkshop.Models;
 using NHibernateWorkshop.Tests.Controllers;
 using NUnit.Framework;

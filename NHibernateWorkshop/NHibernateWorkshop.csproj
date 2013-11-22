@@ -146,6 +146,7 @@
     <Compile Include="Data\MapByCode\IMappingExceptions.cs" />
     <Compile Include="Data\MapByCode\MapByCodeMapper.cs" />
     <Compile Include="Data\MapByCode\MappingExceptionsForModel.cs" />
+    <Compile Include="Data\Queries\BlogsPaged.cs" />
     <Compile Include="Data\Query.cs" />
     <Compile Include="Data\SessionManager.cs" />
     <Compile Include="Data\SessionProvider.cs" />
