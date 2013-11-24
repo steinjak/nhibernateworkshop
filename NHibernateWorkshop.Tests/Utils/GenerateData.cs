@@ -127,7 +127,6 @@ namespace NHibernateWorkshop.Tests.Utils
                 comments.Add(new Comment
                 {
                     Author = random.Next(100) < 70 ? (PostingIdentity)new UserPostingIdentity{User = PickAUser(users)} : new AnonymousPostingIdentity {Nick = "Anonymous Coward"},
-                    CommentTo = post,
                     Text = theme.GenerateComment(),
                     Timestamp = GenerateDate(post.PublishedOn)
                 });

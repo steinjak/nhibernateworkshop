@@ -8,8 +8,7 @@ namespace NHibernateWorkshop.Data.MapByCode
     {
         public void Apply(ConventionModelMapper mapper)
         {
-            mapper.Class<Post>(p => p.Property(x => x.Content, o => o.Type(NHibernateUtil.StringClob)));
-            mapper.Class<Comment>(p => p.Property(x => x.Text, o => o.Type(NHibernateUtil.StringClob)));
+            mapper.Class<Post>(c => c.Bag(x => x.Media, cm => {}, rel => rel.ManyToMany()));
         }
     }
 }

@@ -1,6 +1,8 @@
 ﻿using System;
+using FluentNHibernate.Cfg;
 using NHibernate;
 using NHibernate.Cfg;
+using NHibernateWorkshop.Data.FluentMappings;
 using NHibernateWorkshop.Data.MapByCode;
 
 namespace NHibernateWorkshop.Data
@@ -16,11 +18,26 @@ namespace NHibernateWorkshop.Data
 
         public SessionProvider(Action<Configuration> configDb = null)
         {
-            Configuration = new Configuration();
-            (configDb ?? (c => c.Configure()))(Configuration);
-            Configuration.AddDeserializedMapping(MapByCodeMapper.Map(), "Model");
+            Configuration = ConfigureUsingMappingByCode();
             Configuration.DataBaseIntegration(db => db.OrderInserts = true);
+            (configDb ?? (c => c.Configure()))(Configuration);
             sessionFactory = Configuration.BuildSessionFactory();
+        }
+
+        private Configuration ConfigureUsingMappingByCode()
+        {
+            var cfg = new Configuration();
+            cfg.AddDeserializedMapping(MapByCodeMapper.Map(), "Model");
+            return cfg;
+        }
+
+        private Configuration ConfigureUsingFluentNHibernate()
+        {
+            return Fluently.Configure()
+                .Mappings(x => x
+                    .FluentMappings.AddFromAssemblyOf<UserMap>()
+                    .Conventions.AddFromAssemblyOf<ForeignKeyConvention>())
+                .BuildConfiguration();
         }
 
         public ISession Create()
