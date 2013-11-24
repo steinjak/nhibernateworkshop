@@ -33,13 +33,13 @@ namespace NHibernateWorkshop.Tests.Queries
                             {
                                 blogs.Add(new Blog
                                 {
-                                    Id = results.GetGuid(0),
-                                    Title = results.GetString(1),
+                                    Id = results.GetGuid(results.GetOrdinal("Id")),
+                                    Title = results.GetString(results.GetOrdinal("Title")),
                                     Owner = new User
                                     {
-                                        Id = results.GetGuid(2),
-                                        Username = results.GetString(3),
-                                        Name = results.GetString(4)
+                                        Id = results.GetGuid(results.GetOrdinal("OwnerId")),
+                                        Username = results.GetString(results.GetOrdinal("Username")),
+                                        Name = results.GetString(results.GetOrdinal("Name"))
                                     }
                                 });
                             }
