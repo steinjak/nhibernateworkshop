@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -18,12 +19,13 @@ namespace NHibernateWorkshop.Tests.Utils
     public class GenerateData
     {
         private ISessionFactory sessionFactory;
-        private const int NumberOfUsers = 200;
+        private const int NumberOfUsers = 5000;
         private const int NumberOfContributors = 3;
         private const int NumberOfPostsPerUser = 350;
         private const int NumberOfCommentsPerPost = 50;
 
         private readonly Random random = new Random();
+        private Stopwatch sw;
 
         public GenerateData()
         {
@@ -32,16 +34,19 @@ namespace NHibernateWorkshop.Tests.Utils
             var cfg = new Configuration();
             cfg.ConnectToSqlServer(localhost);
             cfg.AddDeserializedMapping(MapByCodeMapper.Map(), "Model");
+            cfg.SetProperty("adonet.batch_size", "100");
             sessionFactory = cfg.BuildSessionFactory();
+
+            sw = new Stopwatch();
         }
 
         [Test, Explicit]
         public void Generate()
         {
             Console.WriteLine("Generating data...");
-            var sw = new Stopwatch();
             sw.Start();
             var users = CreateUsers();
+            Console.WriteLine("Generated {0} users in {1}, continuing to blogs...", users.Length, sw.Elapsed);
             GenerateBlogsForAll(users);
             sw.Stop();
             Console.WriteLine("Finished in {0}", sw.Elapsed);
@@ -51,30 +56,50 @@ namespace NHibernateWorkshop.Tests.Utils
         {
             var plant = new BasePlant().WithBlueprintsFromAssemblyOf<GenerateData>();
             var users = Enumerable.Range(0, NumberOfUsers).Select(n => plant.Create<User>()).ToArray();
-            using (var session = sessionFactory.OpenSession())
+            using (var session = sessionFactory.OpenStatelessSession())
             using (var tx = session.BeginTransaction())
             {
                 foreach (var user in users)
                 {
-                    session.Save(user);
+                    session.Insert(user);
                 }
                 tx.Commit();
+                session.Close();
             }
             return users;
         }
 
         private void GenerateBlogsForAll(User[] users)
         {
+            var blogs = new List<Blog>();
             foreach (var user in users)
             {
-                using (var session = sessionFactory.OpenSession())
-                using (var tx = session.BeginTransaction())
+                blogs.Add(GenerateBlogFor(user, users));
+
+                if (blogs.Count % 100 == 0)
                 {
-                    var blog = GenerateBlogFor(user, users);
-                    session.Save(blog);
-                    tx.Commit();
+                    SaveAll(blogs);
+                    blogs.Clear();
                 }
             }
+            SaveAll(blogs);
+        }
+
+        private void SaveAll(IList<Blog> blogs)
+        {
+            var start = sw.Elapsed;
+            Console.Write("Saving {0} blog(s) to the DB...", blogs.Count);
+            using (var session = sessionFactory.OpenStatelessSession())
+            using (var tx = session.BeginTransaction())
+            {
+                foreach (var blog in blogs)
+                {
+                    session.Insert(blog);
+                }
+                tx.Commit();
+                session.Close();
+            }
+            Console.WriteLine("transaction committed in {0}; total time = {1}", sw.Elapsed - start, sw.Elapsed);
         }
 
         private Blog GenerateBlogFor(User user, User[] users)

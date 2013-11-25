@@ -1,16 +1,14 @@
 ﻿using System.Collections.Generic;
 using NHibernate.Linq;
-using NHibernateWorkshop.Controllers.Blogs;
 using NHibernateWorkshop.Data.Queries;
 using NHibernateWorkshop.Models;
-using NHibernateWorkshop.Tests.Controllers;
 using NUnit.Framework;
 using System.Linq;
 
 namespace NHibernateWorkshop.Tests.Queries
 {
     [TestFixture]
-    public class WhenQueryingBlogsByPage : ControllerTest
+    public class WhenQueryingBlogsByPage : TestBase
     {
         private IEnumerable<Blog> result;
 

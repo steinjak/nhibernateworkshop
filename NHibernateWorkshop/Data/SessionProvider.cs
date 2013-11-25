@@ -18,17 +18,20 @@ namespace NHibernateWorkshop.Data
 
         public SessionProvider(Action<Configuration> configDb = null)
         {
-            Configuration = ConfigureUsingMappingByCode();
-            Configuration.DataBaseIntegration(db => db.OrderInserts = true);
+            var useMappingByCode = true;
+            Configuration = useMappingByCode ? new Configuration() : ConfigureUsingFluentNHibernate();
             (configDb ?? (c => c.Configure()))(Configuration);
+            Configuration.DataBaseIntegration(db => db.OrderInserts = true);
+            if (useMappingByCode)
+            {
+                ConfigureUsingMappingByCode(Configuration);
+            }
             sessionFactory = Configuration.BuildSessionFactory();
         }
 
-        private Configuration ConfigureUsingMappingByCode()
+        private void ConfigureUsingMappingByCode(Configuration cfg)
         {
-            var cfg = new Configuration();
             cfg.AddDeserializedMapping(MapByCodeMapper.Map(), "Model");
-            return cfg;
         }
 
         private Configuration ConfigureUsingFluentNHibernate()

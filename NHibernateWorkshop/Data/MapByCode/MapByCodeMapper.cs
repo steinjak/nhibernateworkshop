@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -113,7 +114,7 @@ namespace NHibernateWorkshop.Data.MapByCode
         {
             var collectionType = prop.LocalMember.GetPropertyOrFieldType();
             if (!collectionType.IsGenericType) { return null; }
-            if (!typeof(IEnumerable<>).IsAssignableFrom(collectionType.GetGenericTypeDefinition())) { return null; }
+            if (!typeof(IEnumerable).IsAssignableFrom(collectionType)) { return null; }
 
             var elementType = collectionType.GetGenericArguments().FirstOrDefault(t => typeof(Entity).IsAssignableFrom(t));
             return elementType == null ? null : elementType.Name;

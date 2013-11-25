@@ -102,11 +102,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\ControllerTest.cs" />
-    <Compile Include="Controllers\DbTestConfig.cs" />
+    <Compile Include="DbTestConfig.cs" />
     <Compile Include="Models\UserBlueprint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Queries\AdoNetQuerying.cs" />
     <Compile Include="Queries\WhenQueryingBlogsByPage.cs" />
+    <Compile Include="Queries\WhenQueryingFeaturedAuthors.cs" />
+    <Compile Include="TestBase.cs" />
     <Compile Include="Utils\DbManipulationUtilityExtensions.cs" />
     <Compile Include="Utils\GenerateData.cs" />
     <Compile Include="Utils\GenerateSchemaFromMappings.cs" />

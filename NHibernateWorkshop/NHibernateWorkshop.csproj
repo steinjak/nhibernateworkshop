@@ -147,6 +147,7 @@
     <Compile Include="Data\FluentMappings\CommentMap.cs" />
     <Compile Include="Data\FluentMappings\ContributorMap.cs" />
     <Compile Include="Data\FluentMappings\ForeignKeyConvention.cs" />
+    <Compile Include="Data\FluentMappings\JoinTableConvention.cs" />
     <Compile Include="Data\FluentMappings\MediaFileMap.cs" />
     <Compile Include="Data\FluentMappings\PostingIdentityMap.cs" />
     <Compile Include="Data\FluentMappings\PostMap.cs" />
@@ -155,6 +156,7 @@
     <Compile Include="Data\MapByCode\MapByCodeMapper.cs" />
     <Compile Include="Data\MapByCode\MappingExceptionsForModel.cs" />
     <Compile Include="Data\Queries\BlogsPaged.cs" />
+    <Compile Include="Data\Queries\FeaturedAuthors.cs" />
     <Compile Include="Data\Query.cs" />
     <Compile Include="Data\SessionManager.cs" />
     <Compile Include="Data\SessionProvider.cs" />
