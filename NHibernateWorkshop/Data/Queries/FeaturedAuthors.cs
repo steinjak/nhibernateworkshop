@@ -12,7 +12,7 @@ namespace NHibernateWorkshop.Data.Queries
         public override IEnumerable<UserAndFeaturedPost> Execute(ISession session)
         {
             var blogs = session.Query<Blog>().OrderByDescending(b => b.Posts.Count()).Take(3).ToArray();
-            /*var ids = blogs.Select(b => b.Id).ToArray();
+            var ids = blogs.Select(b => b.Id).ToArray();/*
             var featured = session
                 .CreateSQLQuery("SELECT {p.*} FROM Posts p WHERE p.BlogId in (:blogIds) and p.IsFeatured = 1")
                 .AddEntity("p", typeof(Post))

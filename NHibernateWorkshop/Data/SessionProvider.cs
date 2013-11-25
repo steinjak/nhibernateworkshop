@@ -18,7 +18,7 @@ namespace NHibernateWorkshop.Data
 
         public SessionProvider(Action<Configuration> configDb = null)
         {
-            var useMappingByCode = true;
+            var useMappingByCode = false;
             Configuration = useMappingByCode ? new Configuration() : ConfigureUsingFluentNHibernate();
             (configDb ?? (c => c.Configure()))(Configuration);
             Configuration.DataBaseIntegration(db => db.OrderInserts = true);

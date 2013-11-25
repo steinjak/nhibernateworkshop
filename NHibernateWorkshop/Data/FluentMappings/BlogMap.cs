@@ -11,7 +11,7 @@ namespace NHibernateWorkshop.Data.FluentMappings
             Map(x => x.Title);
             References(x => x.Owner);
             HasMany(x => x.Contributors);
-            HasMany(x => x.Posts);
+            HasMany(x => x.Posts).Inverse();
         }
     }
 }

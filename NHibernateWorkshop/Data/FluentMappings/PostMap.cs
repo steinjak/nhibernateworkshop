@@ -14,6 +14,7 @@ namespace NHibernateWorkshop.Data.FluentMappings
             Map(x => x.IsSticky);
             Map(x => x.IsFeatured);
             References(x => x.Author);
+            References(x => x.Blog);
             References(x => x.FeaturedImage);
             HasMany(x => x.Comments);
             HasManyToMany(x => x.Media);

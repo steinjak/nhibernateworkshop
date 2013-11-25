@@ -15,6 +15,7 @@ namespace NHibernateWorkshop.Data.FluentMappings
     {
         public UserPostingIdentityMap()
         {
+            KeyColumn("userpostingidentity_key");
             References(x => x.User);
         }
     }
@@ -23,6 +24,7 @@ namespace NHibernateWorkshop.Data.FluentMappings
     {
         public AnonymousPostingIdentityMap()
         {
+            KeyColumn("anonymouspostingidentity_key");
             Map(x => x.Nick);
         }
     }
